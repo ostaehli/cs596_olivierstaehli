@@ -1,5 +1,7 @@
 # 🐺 Synature - Conceptualization of a Wildlife Data Management
 <i>CS-596 - Optional Project in Computer Science at the Digital Humanities Lab</i>
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
