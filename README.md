@@ -1,6 +1,11 @@
-# Synature
-
+# 🐺 Synature - Conceptualization of a Wildlife Data Management
+<i>CS-596 - Optional Project in Computer Science at the Digital Humanities Lab</i>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+
+---
+
 
 ## Development server
 
@@ -14,14 +19,36 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## 📝 Table of Contents
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [🏁 Requirements](#-requirements)
+- [🧐 About](#-about)
+- [⛏️ Built Using](#️-built-using)
+- [💻 Knowledge Base](#️-knowledge-base)
+- [📐 Architecture Overview](#️-architecture-overview)
+- [✍️ Authors and Advisors](#️-authors-and-advisors)
 
-## Running end-to-end tests
+## 🧐 About
+Wildlife monitoring is the methodology to understand where which animals are. This is crucial
+to conduct wildlife management that ultimately prevents extinction of species and minimizes
+conflicts between animals and humans. As of now, the field of wildlife monitoring does not have
+the technologies of the 21st century. Within the scope of this paper, we are conceptualizing and
+partially implementing a data management platform for rangers and biologists to make wildlife
+monitoring more effective.
+The main motivation is to create a user interface to display wolf howling data that was collected
+through smart microphones that are placed in the forest. However, the requirement collection
+have quickly shown that the users want a holistic data management platform with all monitoring
+methods and all species, which lead to a pivot of our initial focus
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 💻 Links
+- <a href="https://xd.adobe.com/view/92819238-9f67-43d0-b340-d57b99105403-c7d2/">Low Fidelity Prototype</a> 
+- <a href="https://www.figma.com/file/Hv1wjUYGPKfH3EuZrDo9qu/Synature_HighfidelityPrototype">High Fidelity Prototype</a> 
+- <a href="https://app.synature.ch/#/map">Implementation</a> 
+- <a href="https://api.synature.ch/swagger-ui/index.html#/">Swagger Endpoint Documentation</a> 
+- <a href="https://dbdiagram.io/d/62627b2d1072ae0b6ace63a5">Database Scheme</a> 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ✍️ Author and Advisors
+- Olivier Staehli (<a
+                style="color: black;"
+                href="mailto:olivier.staehli@epfl.ch">olivier.staehli@epfl.ch</a>)
+- Prof. Dr. Frederic Kaplan
