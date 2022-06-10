@@ -30,11 +30,12 @@
             <img class="tabledetection-diagram" src={{element.spectrogram}}>
 
             <br>
-            <button (click)="deleteAnimal(element)" mat-raised-button style="margin-right:5px; padding-right:20px; color:white; background-color: red;"  color="warning" type="button"><mat-icon>delete</mat-icon>Delete</button>
+            <button mat-raised-button (click)="flyTo(element)"><mat-icon>pin_drop</mat-icon>Checkout</button>
+            <button (click)="deleteAnimal(element)" mat-raised-button style="margin-left:8px;margin-right:5px; padding-right:20px; color:white; background-color: red;"  color="warning" type="button"><mat-icon>delete</mat-icon>Delete</button>
           </div>
           <div class="tabledetection-description">
-            <div class="tabledetection-detail">
-              <mat-icon>pin_drop</mat-icon><b>Location: {{element.locationLat}} °N, {{element.locationLong}} °E</b>
+            <div class="tabledetection-detail"  >
+             <b>Location: {{element.locationLat}} °N, {{element.locationLong}} °E</b>  
             </div>
             <div class="tabledetection-detail">
               <mat-icon>female</mat-icon><b>Females: {{element.female}}</b>

@@ -126,8 +126,8 @@ export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
         this.dialogRef.open(ManualreportingComponent, { data: { lat, lng } }).afterClosed().subscribe(d => {
             if (!d) return;
             this.wildlifeApi.invalidateCache();
-            this.mapMarkerSubj$.next();
-            this.resetComplexFilters();
+            this.clearFilter();
+            this.applyFilter();
         });
         this.pickingFlag = false;
     }
@@ -144,10 +144,20 @@ export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
     }
 
     openDialogDetectionlist() {
-        this.dialogRef.open(DetectionlistComponent).afterClosed().subscribe(e => {
-            this.detectionMarkers.forEach(m => this.detectionMarkerLayer.removeLayer(m))
-            this.mapMarkerSubj$.next();
-            this.resetComplexFilters()
+        this.dialogRef.open(DetectionlistComponent, { data: this.applyFilter() }).afterClosed().subscribe((e: { delete: WildlifeDetection[], flyTo: L.Marker }) => {
+            if (e.delete?.length) {
+                e.delete.forEach((a: WildlifeDetection) => this.wildlifeApi.deleteAnimal(a)
+                    .subscribe( _ =>
+                        this.detectionMarkers.forEach(d => d.remove())));
+                this.wildlifeApi.invalidateCache();
+              
+                this.clearFilter();
+                this.applyFilter();
+            } 
+            if (e.flyTo) {
+                this.map?.flyTo(e.flyTo.getLatLng(), 14);
+            }
+
         });
     }
 
@@ -208,19 +218,22 @@ export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
     }
 
     clearFilter() {
+        this.mapMarkerSubj$.next();
         this.filterState = this.getInitialState();
-        this.boxMarkerLayer.addTo(this.map || this.initMap());
-        this.detectionMarkerLayer.addTo(this.map || this.initMap());
+        if (!this.map?.hasLayer(this.boxMarkerLayer)) this.boxMarkerLayer.addTo(this.map || this.initMap());
+        if (!this.map?.hasLayer(this.detectionMarkerLayer)) this.detectionMarkerLayer.addTo(this.map || this.initMap());
         this.resetComplexFilters();
         this.applyFilter();
     }
-    private applyFilter() {
+    private applyFilter(): L.Marker<WildlifeDetection>[] {
+        // this.markerSubj$.next();
         this.detectionMarkerLayer.clearLayers();
         let l = this.detectionMarkers;
         l = this.filterState.speciesChosen.length === 0 ? l : this.applySpecies(l);
         l = this.filterState.timesChosen.length === 0 ? l : this.applyTime(l);
         l = this.filterState.monitoringChosen.length === 0 ? l : this.applyMonitoring(l);
         l.forEach(m => this.detectionMarkerLayer.addLayer(m));
+        return l;
     }
     private applySpecies(list: L.Marker<WildlifeDetection>[]) {
         return list.filter(m => this.filterState.speciesChosen.indexOf(m.feature?.properties.animalName ?? "") !== -1);
