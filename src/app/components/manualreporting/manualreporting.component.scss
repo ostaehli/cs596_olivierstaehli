@@ -1,0 +1,18 @@
+.container {
+  padding: 16px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.example-full-width {
+  width: 100%;
+}
+.flex{
+  display: inline-flex
+}
+mat-spinner{
+  margin: auto ;
+  margin-left: 8px;
+}

@@ -1,0 +1,65 @@
+<div style="height:80vh; width: 70vw;" *ngIf="wildlifedata$ | async as dataSource">
+  <h1>List of wildlife detections</h1>
+  <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="filterSubj$.next(input.value)" placeholder="Tracks" #input>
+  </mat-form-field>
+  <table mat-table
+        [dataSource]="dataSource" multiTemplateDataRows
+        class="mat-elevation-z8">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay; index as i ">
+      <th mat-header-cell *matHeaderCellDef> {{columnnames[i]}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}}  </td>
+    </ng-container>
+    <ng-container matColumnDef="expand">
+      <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button aria-label="expand row" (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+          <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+          <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="expandedDetail">
+      <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+        <div class="tabledetection-detail"
+            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+          <div style="padding-bottom:15px;">
+            <img class="tabledetection-diagram" src={{element.media}}>
+            <img class="tabledetection-diagram" src={{element.spectrogram}}>
+
+            <br>
+            <button (click)="deleteAnimal(element)" mat-raised-button style="margin-right:5px; padding-right:20px; color:white; background-color: red;"  color="warning" type="button"><mat-icon>delete</mat-icon>Delete</button>
+          </div>
+          <div class="tabledetection-description">
+            <div class="tabledetection-detail">
+              <mat-icon>pin_drop</mat-icon><b>Location: {{element.locationLat}} °N, {{element.locationLong}} °E</b>
+            </div>
+            <div class="tabledetection-detail">
+              <mat-icon>female</mat-icon><b>Females: {{element.female}}</b>
+            </div>
+            <div class="tabledetection-detail">
+              <mat-icon>male</mat-icon><b>Males: {{element.male}}</b>
+            </div>
+            <div class="tabledetection-detail">
+              <mat-icon>crib</mat-icon><b>Offspring: {{element.offspring}}</b>
+            </div>
+            <br>{{element.comment}}<br>
+            <audio *ngIf="element.spectrogram" controls>
+              <source src={{element.audio}} type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"
+        class="tabledetection-row"
+        [class.example-expanded-row]="expandedElement === element"
+        (click)="expandedElement = expandedElement === element ? null : element">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+  </table>
+</div>

@@ -1,0 +1,890 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>synature documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">synature documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SignupComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/signup/signup.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-signup</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./signup.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./signup.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#countries">countries</a>
+                            </li>
+                            <li>
+                                <a href="#signupForm">signupForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getCurrentLocation">getCurrentLocation</a>
+                            </li>
+                            <li>
+                                <a href="#getFlagEmoji">getFlagEmoji</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadCountries">loadCountries</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#redirect">redirect</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, authService: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/signup/signup.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationService.html" target="_self" >AuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentLocation"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getCurrentLocation
+                        </b>
+                        <a href="#getCurrentLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCurrentLocation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/components/signup/signup.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFlagEmoji"></a>
+                    <span class="name">
+                        <b>
+                            getFlagEmoji
+                        </b>
+                        <a href="#getFlagEmoji"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFlagEmoji(countryCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/components/signup/signup.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>countryCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadCountries"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadCountries
+                        </b>
+                        <a href="#loadCountries"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadCountries()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/components/signup/signup.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/components/signup/signup.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/components/signup/signup.component.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirect"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            redirect
+                        </b>
+                        <a href="#redirect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/components/signup/signup.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="countries"></a>
+                        <span class="name">
+                            <b>
+                            countries</b>
+                            <a href="#countries"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Country.html" target="_self" >Country[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/signup/signup.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="signupForm"></a>
+                        <span class="name">
+                            <b>
+                            signupForm</b>
+                            <a href="#signupForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.fb.group({
+    firstName: [&#x27;&#x27;, Validators.required],
+    lastName: [&#x27;&#x27;, Validators.required],
+    email: [&#x27;&#x27;, Validators.required],
+    password: [&#x27;&#x27;, Validators.required],
+    country: [&#x27;&#x27;, Validators.required]
+  })</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/signup/signup.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpParams } from &#x27;@angular/common/http&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, Validators } from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { Country } from &#x27;src/app/interfaces/country&#x27;;
+import { AuthenticationService } from &#x27;src/app/services/authentication.service&#x27;;
+
+@Component({
+  selector: &#x27;app-signup&#x27;,
+  templateUrl: &#x27;./signup.component.html&#x27;,
+  styleUrls: [&#x27;./signup.component.scss&#x27;]
+})
+export class SignupComponent implements OnInit {
+  signupForm &#x3D; this.fb.group({
+    firstName: [&#x27;&#x27;, Validators.required],
+    lastName: [&#x27;&#x27;, Validators.required],
+    email: [&#x27;&#x27;, Validators.required],
+    password: [&#x27;&#x27;, Validators.required],
+    country: [&#x27;&#x27;, Validators.required]
+  });
+
+  constructor(private fb: FormBuilder, private authService: AuthenticationService, private router: Router, private http: HttpClient) { }
+
+  countries: Country[] &#x3D; [];
+
+  ngOnInit(): void {
+    if (this.authService.isLoggedIn()) {
+      this.redirect()
+    }
+
+    this.loadCountries();
+  };
+
+  onSubmit() {
+    const email: string &#x3D; this.signupForm.value.email,
+      password: string &#x3D; this.signupForm.value.password,
+      firstName: string &#x3D; this.signupForm.value.firstName,
+      lastName: string &#x3D; this.signupForm.value.lastName,
+      countryId: string &#x3D; this.signupForm.value.country;
+
+    this.authService.signup(firstName, lastName, email, password, countryId).then((success) &#x3D;&gt; {
+      this.redirect();
+    }).catch((err) &#x3D;&gt; { console.log(err) })
+  }
+
+  private loadCountries() {
+    //TODO: Fetch from backend not from hardcoded list
+    const APICountryURL &#x3D; &#x27;https://api.synature.ch:443/api/public/countries&#x27;;
+
+
+    this.http.get&lt;Country[]&gt;(APICountryURL).subscribe((res: Country[]) &#x3D;&gt; {
+      this.countries &#x3D; res;
+      this.getCurrentLocation();
+    });
+  }
+
+  private getCurrentLocation() {
+    const APIURL &#x3D; &#x27;https://ipapi.co/country&#x27;;
+    this.http.get(APIURL, {responseType: &quot;text&quot;}).subscribe({
+      next: (data: any) &#x3D;&gt; {
+        const currentCountry &#x3D; this.countries.find(country &#x3D;&gt; country.code &#x3D;&#x3D;&#x3D; data);
+        if (currentCountry !&#x3D; null) {
+          this.signupForm.controls[&#x27;country&#x27;].setValue(currentCountry?.id);
+        } else {
+          this.signupForm.controls[&#x27;country&#x27;].setValue(this.countries.find(country &#x3D;&gt; country.code &#x3D;&#x3D;&#x3D; &#x27;CH&#x27;)?.id);
+        }
+      },
+      error: (err) &#x3D;&gt; {
+        console.error(err);
+      }
+    });
+  }
+
+
+  private redirect() {
+  this.router.navigate([&#x27;/&#x27;]);
+}
+
+getFlagEmoji(countryCode: string) {
+  return countryCode.toUpperCase().replace(/./g, char &#x3D;&gt;
+    String.fromCodePoint(127397 + char.charCodeAt(0))
+  );
+}
+  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;form [formGroup]&#x3D;&quot;signupForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot;&gt;
+    &lt;div style&#x3D;&quot;margin-bottom:50px&quot;&gt;
+        &lt;img src&#x3D;&quot;./assets/images/synature_logo_vertical.png&quot; alt&#x3D;&quot;Synature Logo&quot;
+            style&#x3D;&quot;width:20vw; margin-top:5vh; margin-bottom:2vh;&quot; class&#x3D;&quot;center&quot;&gt;
+        &lt;h1 style&#x3D;&quot;margin-bottom:10vh; color:#305D63; text-align: center&quot;&gt;Welcome to the data mangement&lt;br&gt; platform for
+            rangers and biologists&lt;/h1&gt;
+        &lt;mat-card class&#x3D;&quot;center&quot; style&#x3D;&quot;width: fit-content; padding:30px;&quot;&gt;
+            &lt;mat-card-title style&#x3D;&quot;padding-bottom: 20px; color:#305D63&quot;&gt;Please Sign Up&lt;/mat-card-title&gt;
+            &lt;mat-card-content&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot;&gt;
+                        &lt;mat-label for&#x3D;&quot;firstName&quot;&gt;First Name&lt;/mat-label&gt;
+                        &lt;input matInput type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;firstName&quot; formControlName&#x3D;&quot;firstName&quot; /&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot;&gt;
+                        &lt;mat-label for&#x3D;&quot;lastName&quot;&gt;Last Name&lt;/mat-label&gt;
+                        &lt;input matInput type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;lastName&quot; formControlName&#x3D;&quot;lastName&quot; /&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot;&gt;
+                        &lt;mat-label for&#x3D;&quot;email&quot;&gt;Email&lt;/mat-label&gt;
+                        &lt;input matInput type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;email&quot; formControlName&#x3D;&quot;email&quot; /&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot;&gt;
+                        &lt;mat-label for&#x3D;&quot;password&quot;&gt;Password&lt;/mat-label&gt;
+                        &lt;input matInput type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;password&quot; formControlName&#x3D;&quot;password&quot; /&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;mat-form-field class&#x3D;&quot;example-full-width&quot; appearance&#x3D;&quot;fill&quot;&gt;
+                        &lt;mat-select matNativeControl formControlName&#x3D;&quot;country&quot; id&#x3D;&quot;country&quot;&gt;
+                            &lt;mat-option *ngFor&#x3D;&quot;let country of countries; let i &#x3D; index&quot; [value]&#x3D;&quot;country.id&quot;&gt;
+                                {{getFlagEmoji(country.code)}} {{country.name}}&lt;/mat-option&gt;
+                        &lt;/mat-select&gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+                &lt;button mat-raised-button style&#x3D;&quot;background-color: #305D63;&quot; color&#x3D;&quot;primary&quot; type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Sign Up&lt;/button&gt;
+                &lt;p style&#x3D;&quot;padding-top:10px;&quot;&gt;Already have an account? &lt;a [routerLink]&#x3D;&quot;[&#x27;/login&#x27;]&quot;&gt;Login!&lt;/a&gt;&lt;/p&gt;
+            &lt;/mat-card-content&gt;
+        &lt;/mat-card&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./signup.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 80vw;
+    margin:auto;
+    margin-top: 50px;
+}
+label {
+    display: block;
+    font-size: 1.4em;
+}
+
+input {
+    margin: 0 0 15px 0;
+    width: 100%;
+    height: 1.4em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><form [formGroup]="signupForm" (ngSubmit)="onSubmit()">    <div style="margin-bottom:50px">        <img src="./assets/images/synature_logo_vertical.png" alt="Synature Logo"            style="width:20vw; margin-top:5vh; margin-bottom:2vh;" class="center">        <h1 style="margin-bottom:10vh; color:#305D63; text-align: center">Welcome to the data mangement<br> platform for            rangers and biologists</h1>        <mat-card class="center" style="width: fit-content; padding:30px;">            <mat-card-title style="padding-bottom: 20px; color:#305D63">Please Sign Up</mat-card-title>            <mat-card-content>                <div class="form-group">                    <mat-form-field class="example-full-width" appearance="fill">                        <mat-label for="firstName">First Name</mat-label>                        <input matInput type="text" class="form-control" id="firstName" formControlName="firstName" />                    </mat-form-field>                </div>                <div class="form-group">                    <mat-form-field class="example-full-width" appearance="fill">                        <mat-label for="lastName">Last Name</mat-label>                        <input matInput type="text" class="form-control" id="lastName" formControlName="lastName" />                    </mat-form-field>                </div>                <div class="form-group">                    <mat-form-field class="example-full-width" appearance="fill">                        <mat-label for="email">Email</mat-label>                        <input matInput type="text" class="form-control" id="email" formControlName="email" />                    </mat-form-field>                </div>                <div class="form-group">                    <mat-form-field class="example-full-width" appearance="fill">                        <mat-label for="password">Password</mat-label>                        <input matInput type="password" class="form-control" id="password" formControlName="password" />                    </mat-form-field>                </div>                <div class="form-group">                    <mat-form-field class="example-full-width" appearance="fill">                        <mat-select matNativeControl formControlName="country" id="country">                            <mat-option *ngFor="let country of countries; let i = index" [value]="country.id">                                {{getFlagEmoji(country.code)}} {{country.name}}</mat-option>                        </mat-select>                    </mat-form-field>                </div>                <button mat-raised-button style="background-color: #305D63;" color="primary" type="submit" class="btn btn-primary">Sign Up</button>                <p style="padding-top:10px;">Already have an account? <a [routerLink]="[\'/login\']">Login!</a></p>            </mat-card-content>        </mat-card>    </div></form></div>'
+    var COMPONENTS = [{'name': 'AdddeviceComponent', 'selector': 'app-adddevice'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DetectionlistComponent', 'selector': 'app-detectionlist'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManualreportingComponent', 'selector': 'app-manualreporting'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SignupComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SignupComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

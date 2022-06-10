@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "animal_id": 123,
+      "animalName":	"Wolf",
+      "method":	"Camera trap",
+      "location_long": 7.137011,
+      "location_lat": 46.912510,
+      "media":	"string",
+      "mediaType": "string",
+      "recordedAt":	1643720715,
+      "icon":	"string"
+    }
+
+]
+

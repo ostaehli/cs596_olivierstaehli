@@ -1,0 +1,126 @@
+<div class="map-container" style="margin-top:4px; background-color: transparent;">
+  <img src="./assets/images/synature_logo_horizontal.png" alt="Synature Logo"
+    style="height:20pt; margin-top:6pt; margin-left:12pt; margin-bottom:-7pt;" class="center">
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>map</mat-icon>
+      <span>Map</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>summarize</mat-icon>
+      <span>Reports</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>monitoring</mat-icon>
+      <span>Statistics</span>
+    </button>
+    <button mat-menu-item disabled (click)="openDialogDevice()">
+      <mat-icon>devices</mat-icon>
+      <span>Register devices</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>send</mat-icon>
+      <span>Share</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>account_circle</mat-icon>
+      <span>Account</span>
+    </button>
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      <span>Log out</span>
+    </button>
+  </mat-menu>
+
+  <button mat-raised-button (click)="pickLocation()"
+    style="margin-right: 10px; background-color: #305D63; float: right; " color="primary">
+    <ng-container *ngIf="!pickingFlag else picking">
+      <mat-icon>edit</mat-icon>
+      <span style="padding-left: 8px; padding-right: 8px;">Report</span>
+    </ng-container>
+
+  </button>
+
+  <button mat-icon-button (click)="openDialogDetectionlist()"
+    style="margin-right: 10px; background-color: #305D63; float: right;">
+    <mat-icon style="color: white;">format_list_bulleted</mat-icon>
+  </button>
+
+  <button mat-icon-button (click)="displayFilterOptions()"
+    style="margin-right: 10px; background-color: #305D63; float: right;">
+    <mat-icon style="color: white;">filter_alt</mat-icon>
+  </button>
+
+  <div [hidden]=isShowFilter style="float: right; margin-top:5px">
+    <mat-chip-list mat-icon-button style="margin-right:20px; float: right;">
+      <mat-chip color="primary" style="margin-top:3px" (click)="clearFilter()">Clear Filters</mat-chip>
+      <mat-chip style="margin-top:3px" (click)="toggleLayer('showDevices', filterState.showDevices, boxMarkerLayer)">
+        Display Devices</mat-chip>
+      <mat-chip color="primary" style="margin-top:3px"
+        (click)="toggleLayer('showDetections', filterState.showDetections, detectionMarkerLayer)">Display Detections
+      </mat-chip>
+      <mat-chip [matMenuTriggerFor]="species" style="margin-top:3px">Select species
+        <mat-icon style="margin-bottom:3px">arrow_drop_down</mat-icon>
+      </mat-chip>
+
+      <mat-chip [matMenuTriggerFor]="time" style="margin-top:3px">
+        Select Time
+        <mat-icon style="margin-bottom:3px">arrow_drop_down</mat-icon>
+      </mat-chip>
+
+      <mat-chip [matMenuTriggerFor]="method" style="margin-top:3px">
+        Monitoring method
+        <mat-icon style="margin-bottom:3px">arrow_drop_down</mat-icon>
+      </mat-chip>
+    </mat-chip-list>
+
+    <mat-menu #species="matMenu">
+      <ng-container *ngIf="species$ | async as spec">
+        <button mat-menu-item *ngFor="let s of spec"
+          (click)="onFilterChange(filterState.speciesChosen, s.name); s.chosen = !s.chosen">
+          {{ s.name }} <mat-icon *ngIf="s.chosen">check</mat-icon>
+        </button>
+      </ng-container>
+    </mat-menu>
+
+
+    <mat-menu #time="matMenu">
+      <ng-container *ngIf="time$ | async as data">
+        <button mat-menu-item *ngFor="let t of data"
+          (click)="onFilterChange(filterState.timesChosen, t.name); t.chosen = !t.chosen">
+          {{ t.name }} <mat-icon *ngIf="t.chosen">check</mat-icon>
+        </button>
+      </ng-container>
+    </mat-menu>
+
+
+    <mat-menu #method="matMenu">
+      <ng-container *ngIf="monitoringMethod$ | async as methods">
+        <button mat-menu-item *ngFor="let m of methods"
+          (click)="onFilterChange(filterState.monitoringChosen, m.name); m.chosen = !m.chosen">
+          {{ m.name }} <mat-icon *ngIf="m.chosen">check</mat-icon>
+        </button>
+      </ng-container>
+    </mat-menu>
+  </div>
+
+
+  <div class="map-frame" >
+    <div id="map" [ngClass]="pickingFlag ? 'picking' : ''">
+    </div>
+  </div>
+</div>
+
+<ng-template #picking>
+  <mat-icon>place</mat-icon>
+  <span style="padding-left: 8px; padding-right: 8px;">Pick a Location</span>
+</ng-template>

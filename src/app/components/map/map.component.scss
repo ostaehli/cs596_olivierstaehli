@@ -1,0 +1,27 @@
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.map-frame {
+    border: 2px solid black;
+    height: calc(100% - 44px);
+}
+
+.map-frame:has(.leaflet-control-toggle-active){
+    cursor: pointer;
+    visibility: none;
+}
+
+#map {
+    height: 100%;
+}
+
+.picking{
+  // cursor: url('../../../../node_modules/leaflet/dist/images/marker-icon.png');
+  cursor: crosshair;
+}

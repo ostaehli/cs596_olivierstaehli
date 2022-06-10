@@ -1,0 +1,2411 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>synature documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">synature documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>MapComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/map/map.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-map</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./map.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./map.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#boxMarkerLayer">boxMarkerLayer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#boxMarkers">boxMarkers</a>
+                            </li>
+                            <li>
+                                <a href="#clusterLayer">clusterLayer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#destroy$">destroy$</a>
+                            </li>
+                            <li>
+                                <a href="#detectionMarkerLayer">detectionMarkerLayer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#detectionMarkers">detectionMarkers</a>
+                            </li>
+                            <li>
+                                <a href="#filterState">filterState</a>
+                            </li>
+                            <li>
+                                <a href="#isShowFilter">isShowFilter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#map">map</a>
+                            </li>
+                            <li>
+                                <a href="#monitoringMethod$">monitoringMethod$</a>
+                            </li>
+                            <li>
+                                <a href="#monitoringMethodSubj$">monitoringMethodSubj$</a>
+                            </li>
+                            <li>
+                                <a href="#pickingFlag">pickingFlag</a>
+                            </li>
+                            <li>
+                                <a href="#species$">species$</a>
+                            </li>
+                            <li>
+                                <a href="#speciesSubj$">speciesSubj$</a>
+                            </li>
+                            <li>
+                                <a href="#time$">time$</a>
+                            </li>
+                            <li>
+                                <a href="#timeSubj$">timeSubj$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#applyFilter">applyFilter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#applyMonitoring">applyMonitoring</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#applySpecies">applySpecies</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#applyTime">applyTime</a>
+                            </li>
+                            <li>
+                                <a href="#clearFilter">clearFilter</a>
+                            </li>
+                            <li>
+                                <a href="#displayFilterOptions">displayFilterOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getInitialState">getInitialState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initialFilterData">initialFilterData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initMap">initMap</a>
+                            </li>
+                            <li>
+                                <a href="#logout">logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onFilterChange">onFilterChange</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogDetectionlist">openDialogDetectionlist</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogDevice">openDialogDevice</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogReport">openDialogReport</a>
+                            </li>
+                            <li>
+                                <a href="#pickLocation">pickLocation</a>
+                            </li>
+                            <li>
+                                <a href="#toggleLayer">toggleLayer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(mapMarkerService: <a href="../injectables/MapMarkerService.html">MapMarkerService</a>, rainviewermapService: <a href="../injectables/RainviewermapService.html">RainviewermapService</a>, geoadminmapService: <a href="../injectables/GeoadminmapService.html">GeoadminmapService</a>, locateService: <a href="../injectables/LocationService.html">LocationService</a>, dialogRef: MatDialog, authService: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, wildlifeApi: <a href="../injectables/WildlifeDetectionApiService.html">WildlifeDetectionApiService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/app/components/map/map.component.ts:120</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>mapMarkerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MapMarkerService.html" target="_self" >MapMarkerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rainviewermapService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RainviewermapService.html" target="_self" >RainviewermapService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>geoadminmapService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GeoadminmapService.html" target="_self" >GeoadminmapService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>locateService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocationService.html" target="_self" >LocationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationService.html" target="_self" >AuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>wildlifeApi</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WildlifeDetectionApiService.html" target="_self" >WildlifeDetectionApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilter"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            applyFilter
+                        </b>
+                        <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>applyFilter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="246"
+                            class="link-to-prism">src/app/components/map/map.component.ts:246</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyMonitoring"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            applyMonitoring
+                        </b>
+                        <a href="#applyMonitoring"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>applyMonitoring(list: <a href="../interfaces/WildlifeDetection.html">L.Marker<WildlifeDetection>[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/components/map/map.component.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../interfaces/WildlifeDetection.html" target="_self" >L.Marker&lt;WildlifeDetection&gt;[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applySpecies"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            applySpecies
+                        </b>
+                        <a href="#applySpecies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>applySpecies(list: <a href="../interfaces/WildlifeDetection.html">L.Marker<WildlifeDetection>[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="254"
+                            class="link-to-prism">src/app/components/map/map.component.ts:254</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../interfaces/WildlifeDetection.html" target="_self" >L.Marker&lt;WildlifeDetection&gt;[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyTime"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            applyTime
+                        </b>
+                        <a href="#applyTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>applyTime(list: <a href="../interfaces/WildlifeDetection.html">L.Marker<WildlifeDetection>[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="257"
+                            class="link-to-prism">src/app/components/map/map.component.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>list</td>
+                                    <td>
+                                                <code><a href="../interfaces/WildlifeDetection.html" target="_self" >L.Marker&lt;WildlifeDetection&gt;[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearFilter"></a>
+                    <span class="name">
+                        <b>
+                            clearFilter
+                        </b>
+                        <a href="#clearFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearFilter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="239"
+                            class="link-to-prism">src/app/components/map/map.component.ts:239</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayFilterOptions"></a>
+                    <span class="name">
+                        <b>
+                            displayFilterOptions
+                        </b>
+                        <a href="#displayFilterOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>displayFilterOptions()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/components/map/map.component.ts:170</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInitialState"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            getInitialState
+                        </b>
+                        <a href="#getInitialState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInitialState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/components/map/map.component.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ showDevices: boolean; showDetections: boolean; speciesChosen: {}; timesChosen: {}; monitoringCh...</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialFilterData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            initialFilterData
+                        </b>
+                        <a href="#initialFilterData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initialFilterData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/app/components/map/map.component.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initMap"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            initMap
+                        </b>
+                        <a href="#initMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initMap()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/components/map/map.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>L.Map</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <b>
+                            logout
+                        </b>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="226"
+                            class="link-to-prism">src/app/components/map/map.component.ts:226</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="196"
+                            class="link-to-prism">src/app/components/map/map.component.ts:196</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/app/components/map/map.component.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="131"
+                            class="link-to-prism">src/app/components/map/map.component.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onFilterChange"></a>
+                    <span class="name">
+                        <b>
+                            onFilterChange
+                        </b>
+                        <a href="#onFilterChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onFilterChange(filterList: string[], st: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/components/map/map.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filterList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>st</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogDetectionlist"></a>
+                    <span class="name">
+                        <b>
+                            openDialogDetectionlist
+                        </b>
+                        <a href="#openDialogDetectionlist"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogDetectionlist()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/components/map/map.component.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogDevice"></a>
+                    <span class="name">
+                        <b>
+                            openDialogDevice
+                        </b>
+                        <a href="#openDialogDevice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogDevice()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/components/map/map.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogReport"></a>
+                    <span class="name">
+                        <b>
+                            openDialogReport
+                        </b>
+                        <a href="#openDialogReport"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogReport(lat: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, lng: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/components/map/map.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lat</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>lng</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pickLocation"></a>
+                    <span class="name">
+                        <b>
+                            pickLocation
+                        </b>
+                        <a href="#pickLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pickLocation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/components/map/map.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleLayer"></a>
+                    <span class="name">
+                        <b>
+                            toggleLayer
+                        </b>
+                        <a href="#toggleLayer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleLayer(flagName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, flag: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, layer: L.LayerGroup)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/components/map/map.component.ts:186</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>flagName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>flag</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>layer</td>
+                                    <td>
+                                            <code>L.LayerGroup</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="boxMarkerLayer"></a>
+                        <span class="name">
+                            <b>
+                            boxMarkerLayer</b>
+                            <a href="#boxMarkerLayer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>L.LayerGroup</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>L.layerGroup()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/components/map/map.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="boxMarkers"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            boxMarkers</b>
+                            <a href="#boxMarkers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Box.html" target="_self" >L.Circle&lt;Box&gt;[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/components/map/map.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clusterLayer"></a>
+                        <span class="name">
+                            <b>
+                            clusterLayer</b>
+                            <a href="#clusterLayer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>L.markerClusterGroup()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/map/map.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="destroy$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            destroy$</b>
+                            <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/map/map.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="detectionMarkerLayer"></a>
+                        <span class="name">
+                            <b>
+                            detectionMarkerLayer</b>
+                            <a href="#detectionMarkerLayer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>L.LayerGroup</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>L.layerGroup()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/map/map.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="detectionMarkers"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            detectionMarkers</b>
+                            <a href="#detectionMarkers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/WildlifeDetection.html" target="_self" >L.Marker&lt;WildlifeDetection&gt;[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/components/map/map.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterState"></a>
+                        <span class="name">
+                            <b>
+                            filterState</b>
+                            <a href="#filterState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+        showDevices: true,
+        showDetections: true,
+        speciesChosen: [] as string[],
+        timesChosen: [] as string[],
+        monitoringChosen: [] as string[]
+    }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/map/map.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isShowFilter"></a>
+                        <span class="name">
+                            <b>
+                            isShowFilter</b>
+                            <a href="#isShowFilter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="168" class="link-to-prism">src/app/components/map/map.component.ts:168</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="map"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            map</b>
+                            <a href="#map"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>L.Map | undefined</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/map/map.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="monitoringMethod$"></a>
+                        <span class="name">
+                            <b>
+                            monitoringMethod$</b>
+                            <a href="#monitoringMethod$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.monitoringMethodSubj$.pipe(
+        switchMap(_ &#x3D;&gt; this.wildlifeApi.getwildlifeData()),
+        map(data &#x3D;&gt; data.map(d &#x3D;&gt; d.method)),
+        map(data &#x3D;&gt; [...new Set(data)]),
+        map(spec &#x3D;&gt; spec.map(m &#x3D;&gt; ({ name: m, chosen: false })))
+    )</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/components/map/map.component.ts:84</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="monitoringMethodSubj$"></a>
+                        <span class="name">
+                            <b>
+                            monitoringMethodSubj$</b>
+                            <a href="#monitoringMethodSubj$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;void&gt;(undefined)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/components/map/map.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pickingFlag"></a>
+                        <span class="name">
+                            <b>
+                            pickingFlag</b>
+                            <a href="#pickingFlag"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/map/map.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="species$"></a>
+                        <span class="name">
+                            <b>
+                            species$</b>
+                            <a href="#species$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.speciesSubj$.pipe(
+        switchMap(_ &#x3D;&gt; this.wildlifeApi.getwildlifeData()),
+        map(data &#x3D;&gt; data.map(d &#x3D;&gt; d.animalName)),
+        map(data &#x3D;&gt; [...new Set(data)]),
+        map(spec &#x3D;&gt; spec.map(m &#x3D;&gt; ({ name: m, chosen: false })))
+    )</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/components/map/map.component.ts:68</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="speciesSubj$"></a>
+                        <span class="name">
+                            <b>
+                            speciesSubj$</b>
+                            <a href="#speciesSubj$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;void&gt;(undefined)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/components/map/map.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="time$"></a>
+                        <span class="name">
+                            <b>
+                            time$</b>
+                            <a href="#time$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.timeSubj$.pipe(
+        switchMap(_ &#x3D;&gt; this.wildlifeApi.getwildlifeData()),
+        map(data &#x3D;&gt; data.map(d &#x3D;&gt; d.recordedAt)),
+        map(dates &#x3D;&gt; dates.map(d &#x3D;&gt; new Date(d).getMonth())),
+        map(dates &#x3D;&gt; dates.map(mapToSeason)),
+        map(data &#x3D;&gt; [...new Set(data)]),
+        map(spec &#x3D;&gt; spec.map(m &#x3D;&gt; ({ name: m, chosen: false })))
+    )</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/components/map/map.component.ts:75</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeSubj$"></a>
+                        <span class="name">
+                            <b>
+                            timeSubj$</b>
+                            <a href="#timeSubj$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;void&gt;(undefined)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/components/map/map.component.ts:65</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, AfterViewInit, OnDestroy, OnInit, ViewChild, ElementRef } from &#x27;@angular/core&#x27;;
+import * as L from &#x27;leaflet&#x27;;
+import { MapMarkerService } from &#x27;src/app/services/marker-services/map-marker.service&#x27;;
+import { RainviewermapService, GeoadminmapService } from &#x27;src/app/services/api-services/index&#x27;;
+import { AuthenticationService } from &#x27;src/app/services/authentication.service&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { ManualreportingComponent } from &#x27;src/app/components/manualreporting/manualreporting.component&#x27;;
+import { LocationService } from &#x27;src/app/services/location.service&#x27;;
+import { DetectionlistComponent } from &#x27;../detectionlist/detectionlist.component&#x27;;
+import { AdddeviceComponent } from &#x27;../adddevice/adddevice.component&#x27;;
+import { switchMap, takeUntil, tap } from &#x27;rxjs/operators&#x27;;
+import { BehaviorSubject, Subject } from &#x27;rxjs&#x27;;
+import { WildlifeDetectionApiService } from &#x27;src/app/services/api-services/wildlife-detection-api/wildlife-detection-api.service&#x27;;
+import { map } from &#x27;rxjs/operators&#x27;;
+import { WildlifeDetection } from &#x27;src/app/interfaces/WildlifeDetection&#x27;;
+import { Box } from &#x27;src/app/interfaces/box&#x27;;
+import { mapToSeason } from &#x27;src/app/utils/mont-to-season.mapper&#x27;;
+
+const iconRetinaUrl &#x3D; &#x27;assets/marker-icon-2x.png&#x27;;
+const iconUrl &#x3D; &#x27;assets/marker-icon.png&#x27;;
+const shadowUrl &#x3D; &#x27;assets/marker-shadow.png&#x27;;
+const iconDefault &#x3D; L.icon({
+    iconRetinaUrl,
+    iconUrl,
+    shadowUrl,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    tooltipAnchor: [16, -28],
+    shadowSize: [41, 41]
+});
+L.Marker.prototype.options.icon &#x3D; iconDefault;
+
+
+@Component({
+    selector: &#x27;app-map&#x27;,
+    templateUrl: &#x27;./map.component.html&#x27;,
+    styleUrls: [&#x27;./map.component.scss&#x27;]
+})
+export class MapComponent implements AfterViewInit, OnInit, OnDestroy {
+
+    private destroy$ &#x3D; new Subject&lt;void&gt;();
+    private map: L.Map | undefined;
+
+    pickingFlag &#x3D; false;
+
+    filterState &#x3D; {
+        showDevices: true,
+        showDetections: true,
+        speciesChosen: [] as string[],
+        timesChosen: [] as string[],
+        monitoringChosen: [] as string[]
+    }
+
+    boxMarkerLayer: L.LayerGroup &#x3D; L.layerGroup();
+    detectionMarkerLayer: L.LayerGroup &#x3D; L.layerGroup();
+
+   clusterLayer &#x3D; L.markerClusterGroup();
+
+    private boxMarkers: L.Circle&lt;Box&gt;[];
+    private detectionMarkers: L.Marker&lt;WildlifeDetection&gt;[];
+
+
+    speciesSubj$ &#x3D; new BehaviorSubject&lt;void&gt;(undefined);
+    timeSubj$ &#x3D; new BehaviorSubject&lt;void&gt;(undefined);
+    monitoringMethodSubj$ &#x3D; new BehaviorSubject&lt;void&gt;(undefined);
+
+    species$ &#x3D; this.speciesSubj$.pipe(
+        switchMap(_ &#x3D;&gt; this.wildlifeApi.getwildlifeData()),
+        map(data &#x3D;&gt; data.map(d &#x3D;&gt; d.animalName)),
+        map(data &#x3D;&gt; [...new Set(data)]),
+        map(spec &#x3D;&gt; spec.map(m &#x3D;&gt; ({ name: m, chosen: false })))
+    )
+
+    time$ &#x3D; this.timeSubj$.pipe(
+        switchMap(_ &#x3D;&gt; this.wildlifeApi.getwildlifeData()),
+        map(data &#x3D;&gt; data.map(d &#x3D;&gt; d.recordedAt)),
+        map(dates &#x3D;&gt; dates.map(d &#x3D;&gt; new Date(d).getMonth())),
+        map(dates &#x3D;&gt; dates.map(mapToSeason)),
+        map(data &#x3D;&gt; [...new Set(data)]),
+        map(spec &#x3D;&gt; spec.map(m &#x3D;&gt; ({ name: m, chosen: false })))
+    )
+
+    monitoringMethod$ &#x3D; this.monitoringMethodSubj$.pipe(
+        switchMap(_ &#x3D;&gt; this.wildlifeApi.getwildlifeData()),
+        map(data &#x3D;&gt; data.map(d &#x3D;&gt; d.method)),
+        map(data &#x3D;&gt; [...new Set(data)]),
+        map(spec &#x3D;&gt; spec.map(m &#x3D;&gt; ({ name: m, chosen: false })))
+    )
+
+
+    private initMap(): L.Map {
+        this.map &#x3D; L.map(&#x27;map&#x27;, {
+            crs: L.CRS.EPSG3857,
+            center: [46.801111, 8.226667],
+            zoom: 9,
+            maxZoom: 16,
+            zoomControl: false
+        });
+
+        this.map.addEventListener(&#x27;location-picked&#x27;, (e: any) &#x3D;&gt; this.openDialogReport(e.lat, e.lng))
+        this.clusterLayer.addLayer(this.boxMarkerLayer);
+        this.clusterLayer.addLayer(this.detectionMarkerLayer);
+        this.clusterLayer.addTo(this.map);
+
+        new L.Control.Zoom({ position: &#x27;bottomright&#x27; }).addTo(this.map);
+        //L.control.locate().addTo(this.map);
+
+        const tiles &#x3D; L.tileLayer(&#x27;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#x27;, {
+            maxZoom: 18,
+            minZoom: 3,
+            attribution: &#x27;&amp;copy; &lt;a href&#x3D;&quot;http://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt;&#x27;
+        });
+
+        tiles.addTo(this.map);
+        this.detectionMarkerLayer.addTo(this.map);
+        this.boxMarkerLayer.addTo(this.map);
+
+        return this.map;
+    }
+
+    constructor(private mapMarkerService: MapMarkerService,
+        private rainviewermapService: RainviewermapService,
+        private geoadminmapService: GeoadminmapService,
+        private locateService: LocationService,
+        private dialogRef: MatDialog,
+        private authService: AuthenticationService,
+        private wildlifeApi: WildlifeDetectionApiService,
+    ) { }
+
+    ngOnInit() {
+        this.initialFilterData();
+
+    }
+
+    openDialogReport(lat: number, lng: number) {
+        this.dialogRef.open(ManualreportingComponent, { data: { lat, lng } }).afterClosed().subscribe(d &#x3D;&gt; {
+            if(!d) return;
+            this.wildlifeApi.invalidateCache();
+
+            this.mapMarkerService.getWildlifeMarkers().pipe(
+                tap(d &#x3D;&gt; this.detectionMarkers &#x3D; d),
+                tap(markers &#x3D;&gt; markers.forEach(m &#x3D;&gt; this.detectionMarkerLayer.addLayer(m))),
+                takeUntil(this.destroy$)
+            ).subscribe();
+
+            this.initialFilterData();
+        });
+        this.pickingFlag &#x3D; false;
+
+    }
+
+    pickLocation(){
+        if(!this.pickingFlag){
+            this.map?.once(&#x27;click&#x27;, (e: L.LeafletMouseEvent) &#x3D;&gt; {if(this.pickingFlag) this.openDialogReport(e.latlng.lat, e.latlng.lng)})
+        }
+        this.pickingFlag &#x3D; !this.pickingFlag;
+    }
+
+    openDialogDevice() {
+        this.dialogRef.open(AdddeviceComponent)
+    }
+
+    openDialogDetectionlist() {
+        this.dialogRef.open(DetectionlistComponent)
+    }
+
+    isShowFilter &#x3D; true;
+
+    displayFilterOptions() {
+        this.isShowFilter &#x3D; !this.isShowFilter;
+    }
+
+    onFilterChange(filterList: string[], st: string) {
+        let contains &#x3D; filterList.filter(s &#x3D;&gt; st !&#x3D;&#x3D; s);
+        if (contains.length &lt; filterList.length) {
+            filterList.splice(0, filterList.length);
+            contains.forEach(a &#x3D;&gt; filterList.push(a))
+        } else {
+            filterList.push(st);
+        }
+        this.applyFilter();
+    }
+
+
+    toggleLayer(flagName: string, flag: boolean, layer: L.LayerGroup) {
+        if (flag) {
+            layer.remove()
+        } else {
+            layer.addTo(this.map ?? this.initMap())
+        }
+        (this.filterState as { [key: string]: any })[flagName] &#x3D; !flag;
+    }
+
+
+    ngAfterViewInit(): void {
+        this.initMap()
+        if (this.map) {
+            let layerControl &#x3D; L.control.layers(undefined, undefined, { position: &#x27;bottomleft&#x27; });
+            layerControl.addTo(this.map);
+            this.rainviewermapService.init(layerControl);
+            this.geoadminmapService.init(layerControl);
+
+            this.mapMarkerService.allowInputMarkers(this.map);
+            this.mapMarkerService.addSearchBar(this.map);
+            this.mapMarkerService.addLocationInput(this.map);
+
+
+
+            this.mapMarkerService.getBoxMarkers().pipe(
+                tap(d &#x3D;&gt; this.boxMarkers &#x3D; d),
+                tap(markers &#x3D;&gt; markers.forEach(m &#x3D;&gt; this.boxMarkerLayer.addLayer(m))),
+                takeUntil(this.destroy$)
+            ).subscribe();
+
+            this.mapMarkerService.getWildlifeMarkers().pipe(
+                tap(d &#x3D;&gt; this.detectionMarkers &#x3D; d),
+                tap(markers &#x3D;&gt; markers.forEach(m &#x3D;&gt; this.detectionMarkerLayer.addLayer(m))),
+                takeUntil(this.destroy$)
+            ).subscribe();
+
+
+        }
+    }
+
+    logout(): void {
+        this.authService.logout();
+    }
+
+    ngOnDestroy(): void {
+        if (this.map) {
+            this.locateService.stopLocaton(this.map);
+        }
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+
+
+    clearFilter() {
+        this.filterState &#x3D; this.getInitialState();
+        this.boxMarkerLayer.addTo(this.map || this.initMap());
+        this.detectionMarkerLayer.addTo(this.map || this.initMap());
+        this.initialFilterData();
+        this.applyFilter();
+    }
+    private applyFilter() {
+        this.detectionMarkerLayer.clearLayers();
+        let l &#x3D; this.detectionMarkers;
+        l &#x3D; this.filterState.speciesChosen.length &#x3D;&#x3D;&#x3D; 0 ? l : this.applySpecies(l);
+        l &#x3D; this.filterState.timesChosen.length &#x3D;&#x3D;&#x3D; 0 ? l : this.applyTime(l);
+        l &#x3D; this.filterState.monitoringChosen.length &#x3D;&#x3D;&#x3D; 0 ? l : this.applyMonitoring(l);
+        l.forEach(m &#x3D;&gt; this.detectionMarkerLayer.addLayer(m));
+    }
+    private applySpecies(list: L.Marker&lt;WildlifeDetection&gt;[]) {
+        return list.filter(m &#x3D;&gt; this.filterState.speciesChosen.indexOf(m.feature?.properties.animalName ?? &quot;&quot;) !&#x3D;&#x3D; -1);
+    }
+    private applyTime(list: L.Marker&lt;WildlifeDetection&gt;[]) {
+        return list.filter(m &#x3D;&gt; this.filterState.timesChosen.indexOf(mapToSeason(new Date(m.feature?.properties.recordedAt || -1).getMonth())) !&#x3D;&#x3D; -1);
+    }
+    private applyMonitoring(list: L.Marker&lt;WildlifeDetection&gt;[]) {
+        return list.filter(m &#x3D;&gt; this.filterState.monitoringChosen.indexOf(m.feature?.properties.method ?? &quot;&quot;) !&#x3D;&#x3D; -1);
+    }
+
+    private getInitialState() {
+        return {
+            showDevices: true,
+            showDetections: true,
+            speciesChosen: [] as string[],
+            timesChosen: [] as string[],
+            monitoringChosen: [] as string[]
+        }
+    }
+
+    private initialFilterData() {
+        this.speciesSubj$.next();
+        this.timeSubj$.next();
+        this.monitoringMethodSubj$.next();
+    }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;map-container&quot; style&#x3D;&quot;margin-top:4px; background-color: transparent;&quot;&gt;
+  &lt;img src&#x3D;&quot;./assets/images/synature_logo_horizontal.png&quot; alt&#x3D;&quot;Synature Logo&quot;
+    style&#x3D;&quot;height:20pt; margin-top:6pt; margin-left:12pt; margin-bottom:-7pt;&quot; class&#x3D;&quot;center&quot;&gt;
+
+  &lt;button mat-icon-button [matMenuTriggerFor]&#x3D;&quot;menu&quot;&gt;
+    &lt;mat-icon&gt;menu&lt;/mat-icon&gt;
+  &lt;/button&gt;
+
+  &lt;mat-menu #menu&#x3D;&quot;matMenu&quot;&gt;
+    &lt;button mat-menu-item&gt;
+      &lt;mat-icon&gt;map&lt;/mat-icon&gt;
+      &lt;span&gt;Map&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item disabled&gt;
+      &lt;mat-icon&gt;summarize&lt;/mat-icon&gt;
+      &lt;span&gt;Reports&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item disabled&gt;
+      &lt;mat-icon&gt;monitoring&lt;/mat-icon&gt;
+      &lt;span&gt;Statistics&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item (click)&#x3D;&quot;openDialogDevice()&quot;&gt;
+      &lt;mat-icon&gt;devices&lt;/mat-icon&gt;
+      &lt;span&gt;Register devices&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item disabled&gt;
+      &lt;mat-icon&gt;send&lt;/mat-icon&gt;
+      &lt;span&gt;Share&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item disabled&gt;
+      &lt;mat-icon&gt;settings&lt;/mat-icon&gt;
+      &lt;span&gt;Settings&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item disabled&gt;
+      &lt;mat-icon&gt;account_circle&lt;/mat-icon&gt;
+      &lt;span&gt;Account&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button mat-menu-item (click)&#x3D;&quot;logout()&quot;&gt;
+      &lt;mat-icon&gt;logout&lt;/mat-icon&gt;
+      &lt;span&gt;Log out&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/mat-menu&gt;
+
+  &lt;button mat-raised-button (click)&#x3D;&quot;pickLocation()&quot;
+    style&#x3D;&quot;margin-right: 10px; background-color: #305D63; float: right; &quot; color&#x3D;&quot;primary&quot;&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;!pickingFlag else picking&quot;&gt;
+      &lt;mat-icon&gt;edit&lt;/mat-icon&gt;
+      &lt;span style&#x3D;&quot;padding-left: 8px; padding-right: 8px;&quot;&gt;Report&lt;/span&gt;
+    &lt;/ng-container&gt;
+    
+  &lt;/button&gt;
+
+  &lt;button mat-icon-button (click)&#x3D;&quot;openDialogDetectionlist()&quot;
+    style&#x3D;&quot;margin-right: 10px; background-color: #305D63; float: right;&quot;&gt;
+    &lt;mat-icon style&#x3D;&quot;color: white;&quot;&gt;format_list_bulleted&lt;/mat-icon&gt;
+  &lt;/button&gt;
+
+  &lt;button mat-icon-button (click)&#x3D;&quot;displayFilterOptions()&quot;
+    style&#x3D;&quot;margin-right: 10px; background-color: #305D63; float: right;&quot;&gt;
+    &lt;mat-icon style&#x3D;&quot;color: white;&quot;&gt;filter_alt&lt;/mat-icon&gt;
+  &lt;/button&gt;
+
+  &lt;div [hidden]&#x3D;isShowFilter style&#x3D;&quot;float: right; margin-top:5px&quot;&gt;
+    &lt;mat-chip-list mat-icon-button style&#x3D;&quot;margin-right:20px; float: right;&quot;&gt;
+      &lt;mat-chip color&#x3D;&quot;primary&quot; style&#x3D;&quot;margin-top:3px&quot; (click)&#x3D;&quot;clearFilter()&quot;&gt;Clear Filters&lt;/mat-chip&gt;
+      &lt;mat-chip style&#x3D;&quot;margin-top:3px&quot; (click)&#x3D;&quot;toggleLayer(&#x27;showDevices&#x27;, filterState.showDevices, boxMarkerLayer)&quot;&gt;
+        Display Devices&lt;/mat-chip&gt;
+      &lt;mat-chip color&#x3D;&quot;primary&quot; style&#x3D;&quot;margin-top:3px&quot;
+        (click)&#x3D;&quot;toggleLayer(&#x27;showDetections&#x27;, filterState.showDetections, detectionMarkerLayer)&quot;&gt;Display Detections
+      &lt;/mat-chip&gt;
+      &lt;mat-chip [matMenuTriggerFor]&#x3D;&quot;species&quot; style&#x3D;&quot;margin-top:3px&quot;&gt;Select species
+        &lt;mat-icon style&#x3D;&quot;margin-bottom:3px&quot;&gt;arrow_drop_down&lt;/mat-icon&gt;
+      &lt;/mat-chip&gt;
+
+      &lt;mat-chip [matMenuTriggerFor]&#x3D;&quot;time&quot; style&#x3D;&quot;margin-top:3px&quot;&gt;
+        Select Time
+        &lt;mat-icon style&#x3D;&quot;margin-bottom:3px&quot;&gt;arrow_drop_down&lt;/mat-icon&gt;
+      &lt;/mat-chip&gt;
+
+      &lt;mat-chip [matMenuTriggerFor]&#x3D;&quot;method&quot; style&#x3D;&quot;margin-top:3px&quot;&gt;
+        Monitoring method
+        &lt;mat-icon style&#x3D;&quot;margin-bottom:3px&quot;&gt;arrow_drop_down&lt;/mat-icon&gt;
+      &lt;/mat-chip&gt;
+    &lt;/mat-chip-list&gt;
+
+    &lt;mat-menu #species&#x3D;&quot;matMenu&quot;&gt;
+      &lt;ng-container *ngIf&#x3D;&quot;species$ | async as spec&quot;&gt;
+        &lt;button mat-menu-item *ngFor&#x3D;&quot;let s of spec&quot;
+          (click)&#x3D;&quot;onFilterChange(filterState.speciesChosen, s.name); s.chosen &#x3D; !s.chosen&quot;&gt;
+          {{ s.name }} &lt;mat-icon *ngIf&#x3D;&quot;s.chosen&quot;&gt;check&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/ng-container&gt;
+    &lt;/mat-menu&gt;
+
+
+    &lt;mat-menu #time&#x3D;&quot;matMenu&quot;&gt;
+      &lt;ng-container *ngIf&#x3D;&quot;time$ | async as data&quot;&gt;
+        &lt;button mat-menu-item *ngFor&#x3D;&quot;let t of data&quot;
+          (click)&#x3D;&quot;onFilterChange(filterState.timesChosen, t.name); t.chosen &#x3D; !t.chosen&quot;&gt;
+          {{ t.name }} &lt;mat-icon *ngIf&#x3D;&quot;t.chosen&quot;&gt;check&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/ng-container&gt;
+    &lt;/mat-menu&gt;
+
+
+    &lt;mat-menu #method&#x3D;&quot;matMenu&quot;&gt;
+      &lt;ng-container *ngIf&#x3D;&quot;monitoringMethod$ | async as methods&quot;&gt;
+        &lt;button mat-menu-item *ngFor&#x3D;&quot;let m of methods&quot;
+          (click)&#x3D;&quot;onFilterChange(filterState.monitoringChosen, m.name); m.chosen &#x3D; !m.chosen&quot;&gt;
+          {{ m.name }} &lt;mat-icon *ngIf&#x3D;&quot;m.chosen&quot;&gt;check&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/ng-container&gt;
+    &lt;/mat-menu&gt;
+  &lt;/div&gt;
+
+
+  &lt;div class&#x3D;&quot;map-frame&quot; &gt;
+    &lt;div id&#x3D;&quot;map&quot; [ngClass]&#x3D;&quot;pickingFlag ? &#x27;picking&#x27; : &#x27;&#x27;&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ng-template #picking&gt;
+  &lt;mat-icon&gt;place&lt;/mat-icon&gt;
+  &lt;span style&#x3D;&quot;padding-left: 8px; padding-right: 8px;&quot;&gt;Pick a Location&lt;/span&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./map.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.map-frame {
+    border: 2px solid black;
+    height: calc(100% - 44px);
+}
+
+.map-frame:has(.leaflet-control-toggle-active){
+    cursor: pointer;
+    visibility: none;
+}
+
+#map {
+    height: 100%;
+}
+
+.picking{
+  // cursor: url(&#x27;../../../../node_modules/leaflet/dist/images/marker-icon.png&#x27;);
+  cursor: crosshair;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="map-container" style="margin-top:4px; background-color: transparent;">  <img src="./assets/images/synature_logo_horizontal.png" alt="Synature Logo"    style="height:20pt; margin-top:6pt; margin-left:12pt; margin-bottom:-7pt;" class="center">  <button mat-icon-button [matMenuTriggerFor]="menu">    <mat-icon>menu</mat-icon>  </button>  <mat-menu #menu="matMenu">    <button mat-menu-item>      <mat-icon>map</mat-icon>      <span>Map</span>    </button>    <button mat-menu-item disabled>      <mat-icon>summarize</mat-icon>      <span>Reports</span>    </button>    <button mat-menu-item disabled>      <mat-icon>monitoring</mat-icon>      <span>Statistics</span>    </button>    <button mat-menu-item (click)="openDialogDevice()">      <mat-icon>devices</mat-icon>      <span>Register devices</span>    </button>    <button mat-menu-item disabled>      <mat-icon>send</mat-icon>      <span>Share</span>    </button>    <button mat-menu-item disabled>      <mat-icon>settings</mat-icon>      <span>Settings</span>    </button>    <button mat-menu-item disabled>      <mat-icon>account_circle</mat-icon>      <span>Account</span>    </button>    <button mat-menu-item (click)="logout()">      <mat-icon>logout</mat-icon>      <span>Log out</span>    </button>  </mat-menu>  <button mat-raised-button (click)="pickLocation()"    style="margin-right: 10px; background-color: #305D63; float: right; " color="primary">    <ng-container *ngIf="!pickingFlag else picking">      <mat-icon>edit</mat-icon>      <span style="padding-left: 8px; padding-right: 8px;">Report</span>    </ng-container>      </button>  <button mat-icon-button (click)="openDialogDetectionlist()"    style="margin-right: 10px; background-color: #305D63; float: right;">    <mat-icon style="color: white;">format_list_bulleted</mat-icon>  </button>  <button mat-icon-button (click)="displayFilterOptions()"    style="margin-right: 10px; background-color: #305D63; float: right;">    <mat-icon style="color: white;">filter_alt</mat-icon>  </button>  <div [hidden]=isShowFilter style="float: right; margin-top:5px">    <mat-chip-list mat-icon-button style="margin-right:20px; float: right;">      <mat-chip color="primary" style="margin-top:3px" (click)="clearFilter()">Clear Filters</mat-chip>      <mat-chip style="margin-top:3px" (click)="toggleLayer(\'showDevices\', filterState.showDevices, boxMarkerLayer)">        Display Devices</mat-chip>      <mat-chip color="primary" style="margin-top:3px"        (click)="toggleLayer(\'showDetections\', filterState.showDetections, detectionMarkerLayer)">Display Detections      </mat-chip>      <mat-chip [matMenuTriggerFor]="species" style="margin-top:3px">Select species        <mat-icon style="margin-bottom:3px">arrow_drop_down</mat-icon>      </mat-chip>      <mat-chip [matMenuTriggerFor]="time" style="margin-top:3px">        Select Time        <mat-icon style="margin-bottom:3px">arrow_drop_down</mat-icon>      </mat-chip>      <mat-chip [matMenuTriggerFor]="method" style="margin-top:3px">        Monitoring method        <mat-icon style="margin-bottom:3px">arrow_drop_down</mat-icon>      </mat-chip>    </mat-chip-list>    <mat-menu #species="matMenu">      <ng-container *ngIf="species$ | async as spec">        <button mat-menu-item *ngFor="let s of spec"          (click)="onFilterChange(filterState.speciesChosen, s.name); s.chosen = !s.chosen">          {{ s.name }} <mat-icon *ngIf="s.chosen">check</mat-icon>        </button>      </ng-container>    </mat-menu>    <mat-menu #time="matMenu">      <ng-container *ngIf="time$ | async as data">        <button mat-menu-item *ngFor="let t of data"          (click)="onFilterChange(filterState.timesChosen, t.name); t.chosen = !t.chosen">          {{ t.name }} <mat-icon *ngIf="t.chosen">check</mat-icon>        </button>      </ng-container>    </mat-menu>    <mat-menu #method="matMenu">      <ng-container *ngIf="monitoringMethod$ | async as methods">        <button mat-menu-item *ngFor="let m of methods"          (click)="onFilterChange(filterState.monitoringChosen, m.name); m.chosen = !m.chosen">          {{ m.name }} <mat-icon *ngIf="m.chosen">check</mat-icon>        </button>      </ng-container>    </mat-menu>  </div>  <div class="map-frame" >    <div id="map" [ngClass]="pickingFlag ? \'picking\' : \'\'">    </div>  </div></div><ng-template #picking>  <mat-icon>place</mat-icon>  <span style="padding-left: 8px; padding-right: 8px;">Pick a Location</span></ng-template></div>'
+    var COMPONENTS = [{'name': 'AdddeviceComponent', 'selector': 'app-adddevice'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DetectionlistComponent', 'selector': 'app-detectionlist'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ManualreportingComponent', 'selector': 'app-manualreporting'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'SignupComponent', 'selector': 'app-signup'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MapComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MapComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
